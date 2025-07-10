@@ -2,85 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>420Leafly</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- ✅ Google AdSense script with your ID -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9478906907713162"
+     crossorigin="anonymous"></script>
+
   <style>
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0f0f0f;
-      color: white;
-      text-align: center;
+      background-color: #0d0d0d;
+      color: #c2f7c5;
+      font-family: sans-serif;
     }
-    header {
-      background-color: #121212;
-      padding: 20px;
+    .navbar a {
+      color: #c2f7c5;
+      margin-right: 1rem;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header a {
-      display: block;
-      color: #32cd32;
-      text-decoration: none;
-      margin-top: 5px;
-      font-size: 1em;
-    }
-    .search-container {
-      margin: 30px auto;
-      max-width: 600px;
-    }
-    input[type="text"] {
-      width: 90%;
-      padding: 12px;
-      border-radius: 10px;
-      border: none;
-      font-size: 1em;
-    }
-    .image-container {
-      margin-top: 30px;
-    }
-    .image-container img {
-      max-width: 300px;
-      width: 100%;
-      border-radius: 20px;
-      box-shadow: 0 0 12px rgba(0, 255, 0, 0.3);
-    }
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      background-color: #121212;
-      color: #ccc;
-      font-weight: bold;
+    .navbar a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-<body>
-
-  <header>
-    <h1>420Leafly</h1>
-    <a href="https://leafly.com" target="_blank">Visit Leafly.com</a>
-  </header>
-
-  <div class="search-container">
-    <h2>Search Any Strain</h2>
-    <input type="text" placeholder="Search for strains..." />
-    
-    <div class="image-container">
-      <img src="https://420leaflyz.vercel.app/weedbud.png" alt="Weed Bud" />
+<body class="p-4">
+  <!-- Navigation -->
+  <nav class="navbar mb-6 flex flex-wrap items-center justify-between">
+    <h1 class="text-2xl font-bold">420Leafly 🌿</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#strains">Strains</a>
+      <a href="#contact">Contact</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#terms">Terms</a>
     </div>
-  </div>
+  </nav>
 
-  <!-- Google AdSense Code Example -->
-  <!--
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXX"
-     crossorigin="anonymous"></script>
-  -->
+  <!-- Search Section -->
+  <section id="home" class="mb-6">
+    <input type="text" placeholder="Search cannabis strains..." class="w-full p-2 rounded bg-gray-800 text-white" />
+    <p class="mt-2 text-sm text-green-300">Explore 1000+ cannabis strains with effects, origins & chemical data.</p>
+  </section>
 
-  <footer>
-    © 2025 Xris420
+  <!-- Strains Section (Placeholder) -->
+  <section id="strains" class="mb-6">
+    <h2 class="text-xl font-bold mb-2">Popular Strains</h2>
+    <ul class="list-disc list-inside text-green-200">
+      <li>Blue Dream – Uplifting hybrid</li>
+      <li>Girl Scout Cookies – Potent and relaxing</li>
+      <li>Sour Diesel – Energetic sativa</li>
+    </ul>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="mb-6">
+    <h2 class="text-xl font-bold mb-2">Contact Us</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/256758172672" class="underline text-green-400">0758172672</a></p>
+    <p>📸 Instagram: <a href="https://instagram.com/420.xris" class="underline text-green-400">@420.xris</a></p>
+  </section>
+
+  <!-- Privacy Policy -->
+  <section id="privacy" class="mb-6">
+    <h2 class="text-xl font-bold mb-2">Privacy Policy</h2>
+    <p>We respect your privacy. We don't collect personal data unless you contact us directly. We use Google AdSense which may use cookies to show relevant ads. You can manage ad preferences in your Google settings. Last updated: July 10, 2025.</p>
+  </section>
+
+  <!-- Terms -->
+  <section id="terms" class="mb-6">
+    <h2 class="text-xl font-bold mb-2">Terms & Conditions</h2>
+    <p>By using 420Leafly, you agree to use the site for educational purposes only. We do not promote or sell cannabis. External links are not endorsed by us. You must be of legal age in your region to view this content.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-10 text-center text-sm text-green-500">
+    Made with 🌿 by <strong>Xris420</strong> • 2025
   </footer>
-
 </body>
 </html>
